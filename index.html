@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultI-Faced-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formDiv">
+        <section id="personalInfo">
+            <h2>Personal Info</h2>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <div>
+                <input type="number" placeholder="Age">
+                <span><input type="radio" name="gender" value="female"> Female</span>
+                <span><input type="radio" name="gender" value="male"> Male</span>
+            </div>
+            <div>
+                <button onclick="firstNext()">Next</button>
+            </div>
+        </section>
+
+        <section id="educationalInfo">
+            <h2>Educational Info</h2>
+            <input type="text" placeholder="Mat No">
+            <input type="text" placeholder="Faculty">
+            <input type="text" placeholder="Department">
+            <input type="text" placeholder="Course of Study">
+            <input type="number" placeholder="Level">
+            <div>
+                <button onclick="firstBack()">Back</button>
+                <button onclick="secondNext()">Next</button>
+            </div>
+        </section>
+
+
+        <section id="healthInfo">
+            <h2>Health Info</h2>
+
+            <input type="text" placeholder="Genotype">
+            <input type="text" placeholder="Blood Group">
+            <input type="text" placeholder="Disablities, seperate with comma">
+            <div>
+                <button onclick="secondBack()">Back</button>
+                <button onclick="submit()">Submit</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
